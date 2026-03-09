@@ -38,15 +38,23 @@ body {
 body::before {
     content: '';
     position: fixed;
-    top: 0; left: 0; width: 100vw; height: 100vh;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
     background: radial-gradient(circle at 15% 50%, rgba(99, 102, 241, 0.15), transparent 25%),
-                radial-gradient(circle at 85% 30%, rgba(236, 72, 153, 0.15), transparent 25%);
+        radial-gradient(circle at 85% 30%, rgba(236, 72, 153, 0.15), transparent 25%);
     z-index: -1;
     pointer-events: none;
 }
 
 /* Typography elements */
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-family: var(--font-heading);
     font-weight: 700;
 }
@@ -111,7 +119,8 @@ a {
     opacity: 0.8;
 }
 
-.nav-links a:hover, .nav-links a.active {
+.nav-links a:hover,
+.nav-links a.active {
     opacity: 1;
     color: var(--primary-color);
 }
@@ -214,7 +223,8 @@ a {
     backdrop-filter: blur(5px);
 }
 
-.filter-btn:hover, .filter-btn.active {
+.filter-btn:hover,
+.filter-btn.active {
     background: var(--primary-color);
     border-color: var(--primary-color);
     box-shadow: 0 0 15px rgba(99, 102, 241, 0.5);
@@ -270,7 +280,9 @@ a {
 .card-header::after {
     content: '';
     position: absolute;
-    bottom: 0; left: 0; right: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
     height: 50%;
     background: linear-gradient(to top, var(--bg-color), transparent);
 }
@@ -281,7 +293,7 @@ a {
     border-radius: 50%;
     border: 4px solid var(--bg-color);
     position: absolute;
-    bottom: -50px;
+    top: 110px;
     left: 50%;
     transform: translateX(-50%);
     object-fit: cover;
@@ -354,7 +366,10 @@ a {
 
 .team-banner {
     position: absolute;
-    top: 0; left: 0; width: 100%; height: 100%;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
     object-fit: cover;
     z-index: -2;
 }
@@ -362,7 +377,10 @@ a {
 .team-hero::after {
     content: '';
     position: absolute;
-    top: 0; left: 0; right: 0; bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
     background: linear-gradient(to bottom, transparent, var(--bg-color) 90%);
     z-index: -1;
 }
@@ -375,6 +393,7 @@ a {
     display: flex;
     align-items: flex-end;
     gap: 2rem;
+    position: relative;
     z-index: 5;
 }
 
@@ -383,7 +402,7 @@ a {
     height: 150px;
     border-radius: 50%;
     border: 5px solid var(--bg-color);
-    box-shadow: 0 0 30px rgba(0,0,0,0.8);
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.8);
     object-fit: cover;
     background: #111;
 }
@@ -476,7 +495,8 @@ a {
     margin-bottom: 0.25rem;
 }
 
-.info-content span, .info-content a {
+.info-content span,
+.info-content a {
     color: var(--text-muted);
 }
 
@@ -538,7 +558,10 @@ a {
 .gallery-item::after {
     content: '';
     position: absolute;
-    top: 0; left: 0; right: 0; bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
     background: rgba(99, 102, 241, 0.3);
     opacity: 0;
     transition: opacity 0.3s ease;
@@ -593,6 +616,7 @@ footer {
         opacity: 0;
         transform: translateY(30px);
     }
+
     to {
         opacity: 1;
         transform: translateY(0);
@@ -604,7 +628,7 @@ footer {
     .team-content-wrapper {
         grid-template-columns: 1fr;
     }
-    
+
     .team-sidebar {
         position: static;
     }
@@ -612,16 +636,17 @@ footer {
 
 @media (max-width: 768px) {
     .nav-links {
-        display: none; /* simple mobile handling */
+        display: none;
+        /* simple mobile handling */
     }
-    
+
     .team-profile-container {
         flex-direction: column;
         align-items: center;
         text-align: center;
         transform: translateY(50%);
     }
-    
+
     .team-content-wrapper {
         margin-top: 10rem;
     }

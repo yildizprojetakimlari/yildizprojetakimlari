@@ -62,8 +62,8 @@ document.addEventListener('DOMContentLoaded', async () => {
             card.innerHTML = `
                 <div class="card-header">
                     <img src="${team.bannerImage}" alt="${team.name} Banner" class="card-banner" loading="lazy">
-                    <img src="${team.profilePhoto}" alt="${team.name} Avatar" class="card-avatar" loading="lazy">
                 </div>
+                <img src="${team.profilePhoto}" alt="${team.name} Avatar" class="card-avatar" loading="lazy">
                 <div class="card-body">
                     <span class="card-category">${team.category}</span>
                     <h3 class="card-title">${team.name}</h3>
