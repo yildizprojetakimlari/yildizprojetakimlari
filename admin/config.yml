@@ -2,6 +2,7 @@ backend:
   name: github
   repo: yildizprojetakimlari/yildizprojetakimlari
   branch: main # Github deponun ana branch adı
+  site_domain: yildizprojetakimlari.com
 
 media_folder: "images/uploads"
 public_folder: "/images/uploads"
@@ -41,3 +42,4 @@ collections:
         name: "galleryPhotos"
         widget: "list"
         field: {label: "Fotoğraf", name: "photo", widget: "image"}
+
