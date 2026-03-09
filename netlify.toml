@@ -1,0 +1,3 @@
+[build]
+  # Netlify CMS ile oluşturulan .json dosyalarını listeleyip teamsList.json üreten betiği çalıştırır
+  command = "node tools/generate-teams.js"

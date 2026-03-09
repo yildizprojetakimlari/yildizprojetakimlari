@@ -10,7 +10,8 @@ collections:
     label: "Takımlar"
     folder: "content/teams"
     create: true
-    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    identifier_field: name
+    slug: "{{slug}}"
     format: "json"
     fields:
       - {label: "Takım Adı", name: "name", widget: "string"}

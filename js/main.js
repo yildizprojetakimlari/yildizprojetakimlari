@@ -12,25 +12,25 @@ document.addEventListener('DOMContentLoaded', async () => {
     // a list of known team slugs. When you add new teams via CMS, you either run a small script
     // to build an index, or we fetch known ones. 
 
-    // As a simple vanilla approach without a build-step:
-    const teamSlugs = [
-        "yildiz-roket",
-        "lagari-iha"
-    ];
-
     let teamsList = [];
     let categoriesList = new Set();
 
-    // Fetch all team data
+    // Dinamik takım listesini çek (netlify build veya local node script ile oluşturulan)
     try {
-        for (const slug of teamSlugs) {
-            const res = await fetch(`content/teams/${slug}.json`);
-            if (res.ok) {
-                const data = await res.json();
-                data.id = slug; // append ID for routing
-                teamsList.push(data);
-                categoriesList.add(data.category);
+        const listRes = await fetch('content/teamsList.json');
+        if (listRes.ok) {
+            const teamSlugs = await listRes.json();
+            for (const slug of teamSlugs) {
+                const res = await fetch(`content/teams/${slug}.json`);
+                if (res.ok) {
+                    const data = await res.json();
+                    data.id = slug; // append ID for routing
+                    teamsList.push(data);
+                    categoriesList.add(data.category);
+                }
             }
+        } else {
+            console.warn("teamsList.json bulunamadı, takımlar yüklenemiyor.");
         }
     } catch (err) {
         console.error("Takımlar yüklenirken hata oluştu:", err);
