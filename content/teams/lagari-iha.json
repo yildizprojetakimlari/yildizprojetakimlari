@@ -1,21 +1,23 @@
 {
-  "shortDescription": "Otonom uçuş, görüntü işleme ve savunma sistemleri üzerine çalışıyoruz.",
-  "profilePhoto": "/images/uploads/gemini_generated_image_l5fnpal5fnpal5fn.png",
+  "shortDescription": " ",
+  "profilePhoto": "/images/uploads/photo5436284263285762743.avif",
   "name": "Lagari İHA Takımı",
   "socialLinks": {
-    "instagram": "https://instagram.com",
-    "linkedin": "https://linkedin.com",
-    "youtube": "https://youtube.com"
+    "instagram": "https://www.instagram.com/lagariuavteam",
+    "linkedin": "https://www.linkedin.com/company/lagariuavteam",
+    "youtube": "https://www.youtube.com/channel/UCyaMTFQn645QEEhS7YbrdMA",
+    "website": "https://www.lagariuavteam.org/"
   },
-  "fullDescription": "Lagari İHA Takımı, hem gövde montajından otonom sistem algoritmalarına kadar insansız hava aracı geliştirmenin her aşamasını üstlenir. \n\nProjelerimizde hedef tespiti, faydalı yük bırakma, karmaşık rotaları hızla ve hatasız tamamlama gibi gelişmiş görevler yer alıyor. Farklı mühendislik branşlarından takım üyelerimizle sivil ve askeri amaçlı teknolojiler kurguluyoruz.",
-  "phone": "+90 555 987 65 43",
-  "bannerImage": "https://images.unsplash.com/photo-1544620347-160dd8544c0d?auto=format&fit=crop&q=80&w=1200&h=400",
+  "fullDescription": "\n\nLagari İHA Kulübü; 2016 yılında Yıldız Teknik Üniversitesi Mekatronik Mühendisliği Bölümü çatısında, havacılık ve uzay alanında çalışmalar yapmak üzere öğrenciler tarafından kurulmuş bir yarışma ekibidir.\n\nÖnceliklerimiz, Türkiye'nin geleceği için AR-GE faaliyetlerinde bulunmak ve bunu sürdürebilmek için ekibimizin devamlılığını sağlayabilmektir.\n\nMisyonumuz, hedefimizi yüksek tutmak ve bu hedefe ulaşmak için devamlılıkla çalışmak, kazanılan tecrübeler ile her yıl daha da gelişmiş projelere imza atmaktır.",
+  "phone": "",
+  "bannerImage": "/images/uploads/1c3342_12668171adab4f32bea38326a5f5410b~mv2.avif",
   "galleryPhotos": [
-    "https://images.unsplash.com/photo-1527430253228-e93688616381?auto=format&fit=crop&q=80&w=800",
-    "https://images.unsplash.com/photo-1551608759-dd62abdf9f4f?auto=format&fit=crop&q=80&w=800",
-    "https://images.unsplash.com/photo-1508614589041-895b88991e3e?auto=format&fit=crop&q=80&w=800"
+    "/images/uploads/screenshot-2026-03-09-163235.png",
+    "/images/uploads/screenshot-2026-03-09-163510.png",
+    "/images/uploads/screenshot-2026-03-09-163626.png",
+    "/images/uploads/1c3342_3cc2423d7a454d12ab35f93855cd71d2~mv2.avif"
   ],
   "location": "Yıldız Teknik Üniversitesi Beşiktaş Kampüsü",
-  "contactEmail": "info@lagari-iha.xyz",
+  "contactEmail": "lagariuavteam@gmail.com",
   "category": "İnsansız Hava Aracı (İHA)"
 }
