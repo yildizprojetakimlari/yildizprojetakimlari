@@ -1,23 +1,25 @@
 {
-  "shortDescription": "Geleceğin uzay mühendisleri, yüksek irtifa roketleri tasarlıyor.",
-  "profilePhoto": "https://images.unsplash.com/photo-1517976487492-5750f3195933?auto=format&fit=crop&q=80&w=200&h=200",
+  "shortDescription": "Amatör roketçiliğin sınırlarını inovasyon ve hassas mühendislik ile zorluyoruz.",
+  "profilePhoto": "/images/uploads/125526835_411306709919438_1544828152590151949_n.jpg",
   "name": "Yıldız Roket Takımı",
   "socialLinks": {
-    "instagram": "https://instagram.com",
-    "linkedin": "https://linkedin.com",
-    "twitter": "https://twitter.com",
-    "website": "https://yildizroket.com"
+    "instagram": "https://www.instagram.com/yildizroket/",
+    "linkedin": "https://www.linkedin.com/company/yildizroket",
+    "twitter": "",
+    "website": "https://yildizroket.com/",
+    "youtube": "https://www.youtube.com/channel/UCgQi-BX-xgmktX5TqnedKDg",
+    "github": "https://github.com/yildiz-roket"
   },
-  "fullDescription": "Yıldız Roket Takımı, her yıl düzenlenen ulusal ve uluslararası yarışmalarda ülkemizi ve üniversitemizi en iyi şekilde temsil etme vizyonuyla kurulmuştur. Disiplinlerarası mühendislik öğrencilerinin bir araya geldiği bu toplulukta, aerodinamik tasarım, aviyonik sistemler, itki yapıları ve kurtarma sistemleri üzerine yoğun Ar-Ge faaliyetleri yürütülmektedir.\n\nAmacımız: Özgün yerli teknolojiler üreterek Türkiye'nin uzay çalışmalarına nitelikli mühendisler kazandırmak. Bizimle birlikte geleceğe dokunmak, göklere yükselmek istersen başvurunu bekliyoruz!",
+  "fullDescription": "Yıldız Roket Takımı, her yıl düzenlenen ulusal ve uluslararası yarışmalarda ülkemizi ve üniversitemizi en iyi şekilde temsil etme vizyonuyla kurulmuştur. Disiplinlerarası mühendislik öğrencilerinin bir araya geldiği bu toplulukta, aerodinamik tasarım, aviyonik sistemler, itki yapıları ve kurtarma sistemleri üzerine yoğun Ar-Ge faaliyetleri yürütülmektedir.\n\nAmacımız: Özgün yerli teknolojiler üreterek Türkiye'nin uzay çalışmalarına nitelikli mühendisler kazandırmak. Bizimle birlikte geleceğe dokunmak, göklere yükselmek istersen başvurunu bekliyoruz!\n\n\\#﻿yıldızdanyıldızlara",
   "phone": "",
-  "bannerImage": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&q=80&w=1200&h=400",
+  "bannerImage": "/images/uploads/screenshot-2026-03-09-160856.png",
   "galleryPhotos": [
-    "https://images.unsplash.com/photo-1541185933-ef5d8ed016c2?auto=format&fit=crop&q=80&w=800",
-    "https://images.unsplash.com/photo-1614027732688-66236bdf46d5?auto=format&fit=crop&q=80&w=800",
-    "https://images.unsplash.com/photo-1581092160562-40aa08e78837?auto=format&fit=crop&q=80&w=800",
-    "https://images.unsplash.com/photo-1534447677768-be436bb09401?auto=format&fit=crop&q=80&w=800"
+    "/images/uploads/screenshot-2026-03-09-161110.png",
+    "/images/uploads/screenshot-2026-03-09-161340.png",
+    "/images/uploads/screenshot-2026-03-09-161825.png",
+    "/images/uploads/screenshot-2026-03-09-161702.png"
   ],
-  "location": "Yıldız Teknik Üniversitesi Davutpaşa Kampüsü, Teknopark",
-  "contactEmail": "iletisim@yildizroket.com",
+  "location": "Yıldız Teknik Üniversitesi Davutpaşa Kampüsü, Kulüpler Vadisi",
+  "contactEmail": "yildizroket@gmail.com",
   "category": "Roket"
 }
