@@ -1,8 +1,18 @@
 {
-  "name": "XYZ Takımı",
-  "category": "Robotik",
-  "profilePhoto": "/images/uploads/gemini_generated_image_l5fnpal5fnpal5fn.png",
-  "bannerImage": "/images/uploads/ytuslider-3896107424.jpg",
   "shortDescription": "sdfsdf",
-  "fullDescription": "s﻿dfsdfs"
+  "profilePhoto": "/images/uploads/gemini_generated_image_l5fnpal5fnpal5fn.png",
+  "name": "XYZ Takımı",
+  "socialLinks": {
+    "instagram": "sdgs",
+    "linkedin": "dfg"
+  },
+  "fullDescription": "s﻿dfsdfs",
+  "phone": "232",
+  "bannerImage": "/images/uploads/ytuslider-3896107424.jpg",
+  "galleryPhotos": [
+    "/images/uploads/ytuslider-3896107424.jpg"
+  ],
+  "location": "fsdfs",
+  "contactEmail": "sdfs",
+  "category": "Robotik"
 }
