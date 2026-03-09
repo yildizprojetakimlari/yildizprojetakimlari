@@ -1,0 +1,43 @@
+backend:
+  name: github
+  repo: yildizprojetakimlari/yildizprojetakimlari # BURAYI KENDI GITHUB KULLANICI ADINLA DEGISTIRECEKSIN
+  branch: main # Github deponun ana branch adı
+
+media_folder: "images/uploads"
+public_folder: "/images/uploads"
+
+collections:
+  - name: "teams"
+    label: "Takımlar"
+    folder: "content/teams"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    format: "json"
+    fields:
+      - {label: "Takım Adı", name: "name", widget: "string"}
+      - {label: "Kategori", name: "category", widget: "select", options: ["Otonom Araç", "İnsansız Hava Aracı (İHA)", "Roket", "Yazılım & Yapay Zeka", "Biyomühendislik", "Siber Güvenlik", "Robotik"]}
+      - {label: "Profil Fotoğrafı", name: "profilePhoto", widget: "image"}
+      - {label: "Banner Resmi", name: "bannerImage", widget: "image"}
+      - {label: "Kısa Açıklama", name: "shortDescription", widget: "text"}
+      - {label: "Tam Açıklama", name: "fullDescription", widget: "markdown"}
+      - {label: "Konum/Adres", name: "location", widget: "string"}
+      - {label: "İletişim E-Postası", name: "contactEmail", widget: "string"}
+      - {label: "Telefon", name: "phone", widget: "string"}
+      
+      # Sosyal Medya Linkleri (Obje içinde tutulur)
+      - label: "Sosyal Medya Linkleri"
+        name: "socialLinks"
+        widget: "object"
+        fields:
+          - {label: "Instagram Linki", name: "instagram", widget: "string", required: false}
+          - {label: "LinkedIn Linki", name: "linkedin", widget: "string", required: false}
+          - {label: "Twitter(X) Linki", name: "twitter", widget: "string", required: false}
+          - {label: "YouTube Linki", name: "youtube", widget: "string", required: false}
+          - {label: "Github Linki", name: "github", widget: "string", required: false}
+          - {label: "Web Sitesi Linki", name: "website", widget: "string", required: false}
+          
+      # Galeri (Liste Şeklinde Çoklu Fotoğraf)
+      - label: "Galeri Fotoğrafları"
+        name: "galleryPhotos"
+        widget: "list"
+        field: {label: "Fotoğraf", name: "photo", widget: "image"}

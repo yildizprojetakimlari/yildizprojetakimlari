@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Takım Detayı - Yıldız Proje Takımları</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Header Navigation -->
+    <nav class="navbar" style="background: rgba(5,5,10,0.95);">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <i class="fa-solid fa-rocket"></i>
+                Yıldız Proje Takımları
+            </a>
+            <div class="nav-links">
+                <a href="index.html">Ana Sayfaya Dön</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Error State (Hidden by default) -->
+    <div id="error-state" style="display: none; padding-top: 150px; text-align: center; height: 100vh;">
+        <h2><i class="fa-solid fa-triangle-exclamation" style="color: var(--secondary-color);"></i> Takım Bulunamadı
+        </h2>
+        <p style="margin: 1rem 0 2rem;">Aradığınız takım sayfasını bulamadık veya kaldırılmış olabilir.</p>
+        <a href="index.html" class="btn btn-primary">Ana Sayfaya Dön</a>
+    </div>
+
+    <!-- Main Content State (Hidden until data is loaded) -->
+    <div id="team-content" style="display: none;">
+
+        <!-- Team Hero Section (Banner & Profile) -->
+        <header class="team-hero">
+            <img id="team-banner" src="" alt="Banner" class="team-banner">
+
+            <div class="team-profile-container">
+                <img id="team-avatar" src="" alt="Avatar" class="team-avatar">
+                <div class="team-hero-info">
+                    <span id="team-category" class="team-badge">Kategori</span>
+                    <h1 id="team-name">Takım Adı</h1>
+                </div>
+            </div>
+        </header>
+
+        <!-- Detailed Content Area -->
+        <main class="team-content-wrapper">
+
+            <!-- Left Column: Description & Gallery -->
+            <div class="team-main-col">
+                <div class="detail-section">
+                    <h3><i class="fa-solid fa-circle-info"></i> Hakkımızda</h3>
+                    <div id="team-full-desc"
+                        style="white-space: pre-line; color: var(--text-muted); font-size: 1.05rem; line-height: 1.8;">
+                        <!-- Description injected here via JS -->
+                    </div>
+                </div>
+
+                <div class="detail-section">
+                    <h3><i class="fa-regular fa-images"></i> Galeri</h3>
+                    <div id="team-gallery" class="gallery-grid">
+                        <!-- Gallery Images injected here -->
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Column: Info & Contact Sidebar -->
+            <aside class="team-sidebar">
+                <div class="detail-section">
+                    <h3><i class="fa-solid fa-address-card"></i> İletişim Bilgileri</h3>
+
+                    <ul class="info-list">
+                        <li>
+                            <i class="fa-solid fa-location-dot"></i>
+                            <div class="info-content">
+                                <strong>Konum</strong>
+                                <span id="team-location">Yer</span>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-envelope"></i>
+                            <div class="info-content">
+                                <strong>E-Posta</strong>
+                                <a id="team-email" href="">email@domain.com</a>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-phone"></i>
+                            <div class="info-content">
+                                <strong>Telefon</strong>
+                                <a id="team-phone" href="">+90 000 000 00 00</a>
+                            </div>
+                        </li>
+                    </ul>
+
+                    <div id="team-socials" class="social-links">
+                        <!-- Socials injected here -->
+                    </div>
+                </div>
+            </aside>
+
+        </main>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <i class="fa-solid fa-rocket"></i> Yıldız Proje Takımları
+            </div>
+            <p>© 2026 Yıldız Teknik Üniversitesi Proje Takımları. Tüm hakları saklıdır.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/team.js"></script>
+</body>
+
+</html>

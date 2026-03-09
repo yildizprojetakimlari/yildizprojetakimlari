@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yıldız Proje Takımları</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Header Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <i class="fa-solid fa-rocket"></i>
+                Yıldız Proje Takımları
+            </a>
+            <div class="nav-links">
+                <a href="#teams" class="active">Takımlar</a>
+                <a href="#about">Hakkımızda</a>
+                <a href="#contact">İletişim</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="hero-content">
+            <h1>Geleceği Tasarlayan <span class="highlight-text">Yıldızlar</span></h1>
+            <p>Yıldız Teknik Üniversitesi'nin yenilikçi vizyonunu taşıyan, birbirinden yetenekli proje takımlarını tek
+                bir çatı altında keşfedin. Aradığınız tüm mühendislik disiplinlerine ait projelere buradan
+                ulaşabilirsiniz.</p>
+            <a href="#teams" class="btn btn-primary">Takımları Keşfet <i class="fa-solid fa-arrow-down"></i></a>
+        </div>
+        <div class="hero-bg-shapes">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+            <div class="shape shape-3"></div>
+        </div>
+    </header>
+
+    <!-- Main Content Area -->
+    <main id="teams" class="teams-section">
+        <div class="section-header">
+            <h2>Proje Takımlarımız</h2>
+            <p>Alanlarına göre takımlarımızı filtreleyin ve detaylı olarak inceleyin.</p>
+        </div>
+
+        <!-- Category Filters -->
+        <div class="filters" id="category-filters">
+            <button class="filter-btn active" data-filter="all">Tümü</button>
+            <!-- Categories will be injected here via JS -->
+        </div>
+
+        <!-- Teams Grid -->
+        <div class="teams-grid" id="teams-grid">
+            <!-- Team Cards will be injected here via JS -->
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <i class="fa-solid fa-rocket"></i> Yıldız Proje Takımları
+            </div>
+            <p>© 2026 Yıldız Teknik Üniversitesi Proje Takımları. Tüm hakları saklıdır.</p>
+            <div class="footer-socials">
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
