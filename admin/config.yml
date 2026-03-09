@@ -1,6 +1,6 @@
 backend:
   name: github
-  repo: yildizprojetakimlari/yildizprojetakimlari # BURAYI KENDI GITHUB KULLANICI ADINLA DEGISTIRECEKSIN
+  repo: yildizprojetakimlari/yildizprojetakimlari
   branch: main # Github deponun ana branch adı
 
 media_folder: "images/uploads"
