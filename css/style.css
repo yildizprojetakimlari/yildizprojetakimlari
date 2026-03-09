@@ -1,22 +1,18 @@
 /* CSS Variables & Global Reset */
 :root {
-    --bg-color: #FFFFFF;
-    --text-color: #101828;
-    --text-muted: #475467;
-    --primary-color: #1A538C;
-    /* GrowAffiliate Blue */
-    --secondary-color: #EEF2FE;
-    /* GrowAffiliate Light Blue bg */
-    --tertiary-color: #FDF2F8;
-    /* GrowAffiliate Light Pink bg */
-    --glass-bg: #FFFFFF;
-    --glass-border: #eaecf0;
-    --glass-shadow: none;
-    --card-hover-bg: #f9fafb;
+    --bg-color: #05050a;
+    --text-color: #ffffff;
+    --text-muted: rgba(255, 255, 255, 0.7);
+    --primary-color: #6366f1;
+    --secondary-color: #ec4899;
+    --glass-bg: rgba(255, 255, 255, 0.03);
+    --glass-border: rgba(255, 255, 255, 0.1);
+    --glass-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+    --card-hover-bg: rgba(255, 255, 255, 0.08);
     --transition-speed: 0.3s;
-    --border-radius: 20px;
-    --font-heading: 'Bricolage Grotesque', sans-serif;
-    --font-body: 'Inter', sans-serif;
+    --border-radius: 16px;
+    --font-heading: 'Outfit', sans-serif;
+    --font-body: 'Plus Jakarta Sans', sans-serif;
 }
 
 * {
@@ -46,8 +42,8 @@ body::before {
     left: 0;
     width: 100vw;
     height: 100vh;
-    background: radial-gradient(circle at 15% 50%, rgba(203, 160, 82, 0.05), transparent 25%),
-        radial-gradient(circle at 85% 30%, rgba(26, 54, 93, 0.05), transparent 25%);
+    background: radial-gradient(circle at 15% 50%, rgba(99, 102, 241, 0.15), transparent 25%),
+        radial-gradient(circle at 85% 30%, rgba(236, 72, 153, 0.15), transparent 25%);
     z-index: -1;
     pointer-events: none;
 }
@@ -70,7 +66,10 @@ a {
 }
 
 .highlight-text {
-    color: var(--primary-color);
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
 }
 
 /* Navigation */
@@ -79,7 +78,9 @@ a {
     top: 0;
     width: 100%;
     padding: 1.5rem 0;
-    background: #FFFFFF;
+    background: rgba(5, 5, 10, 0.8);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
     border-bottom: 1px solid var(--glass-border);
     z-index: 1000;
     transition: all var(--transition-speed) ease;
@@ -103,9 +104,8 @@ a {
     gap: 0.5rem;
 }
 
-.logo img {
-    height: 40px;
-    width: auto;
+.logo i {
+    color: var(--primary-color);
 }
 
 .nav-links {
@@ -158,26 +158,25 @@ a {
     display: inline-flex;
     align-items: center;
     gap: 0.75rem;
-    padding: 0.8rem 1.8rem;
-    border-radius: 4px;
+    padding: 1rem 2rem;
+    border-radius: 50px;
     font-family: var(--font-heading);
-    font-size: 1rem;
-    font-weight: 500;
+    font-size: 1.1rem;
+    font-weight: 600;
     cursor: pointer;
     border: none;
     transition: all var(--transition-speed) ease;
 }
 
 .btn-primary {
-    background: var(--primary-color);
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
     color: white;
-    box-shadow: none;
+    box-shadow: 0 0 20px rgba(99, 102, 241, 0.4);
 }
 
 .btn-primary:hover {
-    background: #144170;
-    transform: translateY(-2px);
-    box-shadow: 0 8px 16px rgba(16, 24, 40, 0.1);
+    transform: translateY(-3px);
+    box-shadow: 0 0 30px rgba(236, 72, 153, 0.6);
 }
 
 /* Teams Section */
@@ -212,23 +211,23 @@ a {
 }
 
 .filter-btn {
-    background: #fdfdfd;
+    background: var(--glass-bg);
     border: 1px solid var(--glass-border);
     color: var(--text-color);
     padding: 0.6rem 1.5rem;
-    border-radius: 4px;
+    border-radius: 50px;
     font-family: var(--font-body);
     font-weight: 500;
     cursor: pointer;
     transition: all var(--transition-speed) ease;
+    backdrop-filter: blur(5px);
 }
 
 .filter-btn:hover,
 .filter-btn.active {
     background: var(--primary-color);
     border-color: var(--primary-color);
-    color: white;
-    box-shadow: none;
+    box-shadow: 0 0 15px rgba(99, 102, 241, 0.5);
 }
 
 /* Grid Layout */
@@ -240,10 +239,11 @@ a {
 
 /* Team Card */
 .team-card {
-    background: var(--secondary-color);
+    background: var(--glass-bg);
     border: 1px solid var(--glass-border);
     border-radius: var(--border-radius);
     overflow: hidden;
+    backdrop-filter: blur(10px);
     transition: all var(--transition-speed) ease;
     cursor: pointer;
     text-align: center;
@@ -253,10 +253,10 @@ a {
 }
 
 .team-card:hover {
-    transform: translateY(-4px);
-    background: var(--tertiary-color);
-    box-shadow: 0 12px 24px rgba(16, 24, 40, 0.06);
-    border-color: #d0d5dd;
+    transform: translateY(-10px);
+    background: var(--card-hover-bg);
+    box-shadow: var(--glass-shadow);
+    border-color: rgba(99, 102, 241, 0.5);
 }
 
 /* Card image setup */
@@ -288,22 +288,17 @@ a {
 }
 
 .card-avatar {
-    width: 80px;
-    height: 80px;
+    width: 100px;
+    height: 100px;
     border-radius: 50%;
-    border: 4px solid var(--secondary-color);
+    border: 4px solid var(--bg-color);
     position: absolute;
-    top: 120px;
+    top: 110px;
     left: 50%;
     transform: translateX(-50%);
     object-fit: cover;
     z-index: 5;
-    background: #fff;
-    transition: border-color var(--transition-speed) ease;
-}
-
-.team-card:hover .card-avatar {
-    border-color: var(--tertiary-color);
+    background: #111;
 }
 
 .card-body {
@@ -317,7 +312,7 @@ a {
     font-size: 0.75rem;
     text-transform: uppercase;
     letter-spacing: 1.5px;
-    color: var(--primary-color);
+    color: var(--secondary-color);
     font-weight: 700;
     margin-bottom: 0.5rem;
 }
@@ -334,7 +329,6 @@ a {
     margin-bottom: 1.5rem;
     display: -webkit-box;
     -webkit-line-clamp: 3;
-    line-clamp: 3;
     -webkit-box-orient: vertical;
     overflow: hidden;
 }
@@ -408,9 +402,9 @@ a {
     height: 150px;
     border-radius: 50%;
     border: 5px solid var(--bg-color);
-    box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.8);
     object-fit: cover;
-    background: #fff;
+    background: #111;
 }
 
 .team-hero-info {
@@ -423,14 +417,14 @@ a {
 }
 
 .team-badge {
-    background: rgba(26, 54, 93, 0.1);
-    color: var(--primary-color);
+    background: rgba(99, 102, 241, 0.2);
+    color: #a5b4fc;
     padding: 0.3rem 1rem;
     border-radius: 50px;
     font-size: 0.85rem;
     font-weight: 600;
     display: inline-block;
-    border: 1px solid rgba(26, 54, 93, 0.3);
+    border: 1px solid rgba(99, 102, 241, 0.3);
 }
 
 .team-content-wrapper {
@@ -455,11 +449,11 @@ a {
 }
 
 .detail-section {
-    background: #fcfcfd;
+    background: var(--glass-bg);
     border: 1px solid var(--glass-border);
     border-radius: var(--border-radius);
     padding: 2.5rem;
-    box-shadow: 0 4px 6px rgba(16, 24, 40, 0.02);
+    backdrop-filter: blur(10px);
 }
 
 .detail-section h3 {
@@ -490,7 +484,7 @@ a {
 }
 
 .info-list i {
-    color: var(--primary-color);
+    color: var(--secondary-color);
     font-size: 1.25rem;
     margin-top: 0.25rem;
 }
@@ -519,22 +513,20 @@ a {
 .social-links a {
     width: 45px;
     height: 45px;
-    border-radius: 4px;
-    background: #f2f4f7;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.05);
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 1.25rem;
-    color: var(--text-muted);
     border: 1px solid var(--glass-border);
     transition: all var(--transition-speed) ease;
 }
 
 .social-links a:hover {
     background: var(--primary-color);
-    color: white;
     border-color: var(--primary-color);
-    transform: translateY(-3px);
+    transform: translateY(-5px);
 }
 
 /* Gallery Grid */
@@ -570,7 +562,7 @@ a {
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(26, 54, 93, 0.3);
+    background: rgba(99, 102, 241, 0.3);
     opacity: 0;
     transition: opacity 0.3s ease;
 }
@@ -583,7 +575,7 @@ a {
 footer {
     border-top: 1px solid var(--glass-border);
     padding: 3rem 0;
-    background: var(--glass-bg);
+    background: rgba(0, 0, 0, 0.5);
     margin-top: 5rem;
 }
 
