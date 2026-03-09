@@ -19,9 +19,9 @@ collections:
       - {label: "Banner Resmi", name: "bannerImage", widget: "image"}
       - {label: "Kısa Açıklama", name: "shortDescription", widget: "text"}
       - {label: "Tam Açıklama", name: "fullDescription", widget: "markdown"}
-      - {label: "Konum/Adres", name: "location", widget: "string"}
-      - {label: "İletişim E-Postası", name: "contactEmail", widget: "string"}
-      - {label: "Telefon", name: "phone", widget: "string"}
+      - {label: "Konum/Adres", name: "location", widget: "string", required: false}
+      - {label: "İletişim E-Postası", name: "contactEmail", widget: "string", required: false}
+      - {label: "Telefon", name: "phone", widget: "string", required: false}
       
       # Sosyal Medya Linkleri (Obje içinde tutulur)
       - label: "Sosyal Medya Linkleri"

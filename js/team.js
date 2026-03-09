@@ -39,19 +39,43 @@ document.addEventListener('DOMContentLoaded', async () => {
         // Populate Main Content
         document.getElementById('team-full-desc').textContent = team.fullDescription || team.shortDescription;
 
-        // Populate Sidebar
-        document.getElementById('team-location').textContent = team.location || 'Konum Belirtilmedi';
+        // Populate Hero Website
+        const heroWebsiteEl = document.getElementById('team-website-hero');
+        const heroWebsiteText = document.getElementById('team-website-text');
 
+        if (team.socialLinks && team.socialLinks.website) {
+            heroWebsiteEl.href = team.socialLinks.website;
+            // Extract display domain for prettier look
+            try {
+                const urlObj = new URL(team.socialLinks.website);
+                heroWebsiteText.textContent = urlObj.hostname.replace('www.', '');
+            } catch (e) {
+                heroWebsiteText.textContent = "Web Sitesini Ziyaret Et";
+            }
+            heroWebsiteEl.style.display = 'inline-flex';
+        }
+
+        // Populate Sidebar
+        const locationEl = document.getElementById('team-location');
+        if (team.location) {
+            locationEl.textContent = team.location;
+        } else {
+            locationEl.closest('li').style.display = 'none';
+        }
         const emailEl = document.getElementById('team-email');
         if (team.contactEmail) {
             emailEl.textContent = team.contactEmail;
             emailEl.href = `mailto:${team.contactEmail}`;
+        } else {
+            emailEl.closest('li').style.display = 'none';
         }
 
         const phoneEl = document.getElementById('team-phone');
         if (team.phone) {
             phoneEl.textContent = team.phone;
             phoneEl.href = `tel:${team.phone.replace(/\s+/g, '')}`;
+        } else {
+            phoneEl.closest('li').style.display = 'none';
         }
 
         // Populate Socials
@@ -59,7 +83,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         const iconMap = {
             instagram: 'fa-instagram',
             linkedin: 'fa-linkedin',
-            twitter: 'fa-twitter',
+            twitter: 'fa-x-twitter',
             youtube: 'fa-youtube',
             github: 'fa-github',
             website: 'fa-globe'
