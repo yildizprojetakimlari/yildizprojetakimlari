@@ -78,7 +78,6 @@ document.addEventListener('DOMContentLoaded', async () => {
             phoneEl.closest('li').style.display = 'none';
         }
 
-        // Populate Socials
         const socialsContainer = document.getElementById('team-socials');
         const iconMap = {
             instagram: 'fa-instagram',
