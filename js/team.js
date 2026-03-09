@@ -28,7 +28,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         contentState.style.display = 'block';
 
         // Update Document Title
-        document.title = `${team.name} - Yıldız Proje Takımları`;
+        document.title = `${team.name} - YTÜ Proje Takımları`;
 
         // Populate Hero
         document.getElementById('team-banner').src = team.bannerImage || '';
