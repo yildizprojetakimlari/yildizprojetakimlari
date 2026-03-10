@@ -1,0 +1,23 @@
+{
+  "shortDescription": "Uzay araştırmaları ve robotik alanında, cesur mühendislik yaklaşımlarıyla yeni nesil gezegen keşif araçları geliştiren öğrenci takımı.\n",
+  "profilePhoto": "/images/uploads/355602427_186792521030016_3240920834908780641_n.jpg",
+  "name": "Yıldız Rover",
+  "socialLinks": {
+    "website": "https://rover.yildiz.edu.tr/",
+    "twitter": "https://x.com/yildiz_rover",
+    "linkedin": "https://www.linkedin.com/company/yildiz-rover/",
+    "youtube": "https://www.youtube.com/yildizrover",
+    "instagram": "https://www.instagram.com/yildiz_rover"
+  },
+  "fullDescription": "Yıldız Rover, SPARK (Space and Art Kitchen) Kulübü bünyesinde faaliyet gösteren disiplinler arası bir öğrenci robotik takımıdır. Gezegen keşif araçları (rover) tasarlıyor, inşa ediyor, test ediyor ve tüm bunları, cesur ve uygulamalı mühendislik yaklaşımımızla Yıldız Teknik Üniversitesi'ni ve Türkiye'yi uluslararası arenada temsil etmeyi hedefliyoruz.\n\n21 farklı bölümden gelen takım arkadaşlarımızla mekanik tasarımdan elektroniğe, yazılıma ve bilime uzanan çok çeşitli yetenekleri bir araya getiriyoruz. Farklı bakış açılarının sunduğu bu zenginlik; hızlı hareket etmemizi, sorunlara yaratıcı çözümler bulmamızı ve büyük görev fikirlerini sahaya inmeye hazır bir keşif aracına dönüştürmemizi sağlıyor.",
+  "phone": "+90 506 274 80 04",
+  "bannerImage": "/images/uploads/screenshot-2026-03-10-112704.png",
+  "galleryPhotos": [
+    "/images/uploads/screenshot-2026-03-10-112843.png",
+    "/images/uploads/screenshot-2026-03-10-112745.png",
+    "/images/uploads/screenshot-2026-03-10-112904.png"
+  ],
+  "location": "Yıldız Teknik Üniversitesi Davutpaşa Kampüsü 34220, Esenler, Istanbul, Türkiye",
+  "contactEmail": "rover@yildiz.edu.tr",
+  "category": "Robotik"
+}
