@@ -108,6 +108,7 @@ document.addEventListener('DOMContentLoaded', async () => {
             team.galleryPhotos.forEach(photoUrl => {
                 const item = document.createElement('div');
                 item.className = 'gallery-item';
+                item.onclick = () => openModal(photoUrl);
                 item.innerHTML = `<img src="${photoUrl}" alt="Galeri Fotoğrafı" loading="lazy">`;
                 galleryContainer.appendChild(item);
             });
@@ -120,3 +121,37 @@ document.addEventListener('DOMContentLoaded', async () => {
         errorState.style.display = 'block';
     }
 });
+
+// Modal Logic
+const modal = document.getElementById("image-modal");
+const modalImg = document.getElementById("modal-img");
+
+function openModal(imgSrc) {
+    // Explicitly set display flex to allow centering to work, then add show class for opacity transition
+    modal.style.display = "flex";
+
+    // Slight delay to allow display block to register before opacity transition
+    setTimeout(() => {
+        modal.classList.add("show");
+    }, 10);
+
+    modalImg.src = imgSrc;
+    document.body.style.overflow = "hidden"; // Prevent background scrolling
+}
+
+function closeModal() {
+    modal.classList.remove("show");
+    setTimeout(() => {
+        modal.style.display = "none";
+    }, 300); // wait for transition to finish
+    document.body.style.overflow = "auto";
+}
+
+// Close modal when clicking outside the image
+if (modal) {
+    modal.addEventListener("click", function (event) {
+        if (event.target === modal) {
+            closeModal();
+        }
+    });
+}
