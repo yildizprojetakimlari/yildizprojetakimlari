@@ -1,0 +1,21 @@
+{
+  "shortDescription": "Yıldız Teknik Üniversitesi MİNT Kulübü’nün geliştirdiği Deptron: Otonom Depo Robotu | ROS2 + SLAM + AI destekli robot sistemi.",
+  "profilePhoto": "/images/uploads/538872989_17858391459481473_4977390733262075453_n.jpg",
+  "name": "Deptron Robotics",
+  "socialLinks": {
+    "website": "linktr.ee/deptronrobotics",
+    "github": "https://github.com/deptronrobotics",
+    "instagram": "https://www.instagram.com/deptron_robotics/",
+    "linkedin": "https://www.linkedin.com/company/deptron",
+    "twitter": "https://x.com/DeptronRobotics"
+  },
+  "fullDescription": "Teknofest Sanayide Dijital Teknolojiler Yarışması finalisti Deptron ekibi, otonom depo araçları konusunda arge çalışmalarına devam etmektedir.",
+  "bannerImage": "/images/uploads/screenshot-2026-03-10-105434.png",
+  "galleryPhotos": [
+    "/images/uploads/screenshot-2026-03-10-105847.png",
+    "/images/uploads/screenshot-2026-03-10-105833.png",
+    "/images/uploads/screenshot-2026-03-10-105931.png"
+  ],
+  "location": "Yıldız Teknik Üniversitesi Davutpaşa Kampüsü, Kulüpler Vadisi",
+  "category": "Robotik"
+}
