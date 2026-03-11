@@ -1,0 +1,25 @@
+{
+  "shortDescription": "Yıldız Teknik Üniversitesi Alternatif Enerjili Sistemler Kulübü",
+  "profilePhoto": "/images/uploads/409414501_727386359270474_5877431413129087482_n.jpg",
+  "name": "AESK",
+  "socialLinks": {
+    "instagram": "https://www.instagram.com/ytuaesk/",
+    "website": "https://www.ytuaesk.com/",
+    "twitter": "https://x.com/YtuAESK",
+    "linkedin": "https://tr.linkedin.com/company/ytuaesk",
+    "youtube": "https://www.youtube.com/@ytuaesk"
+  },
+  "fullDescription": "AESK (Alternatif Enerji Sistemleri Kulübü), 20 yılı aşkın süredir Yıldız Teknik Üniversitesi bünyesinde faaliyet gösteren; elektrikli, otonom ve hidrojen enerjili araç teknolojileri üzerine uzmanlaşmış öncü bir Ar-Ge takımıdır. Sürdürülebilir mobilite ve enerji verimliliği vizyonuyla hareket eden ekip, donanım tasarımından otonom sürüş algoritmalarına kadar tüm geliştirme süreçlerini uçtan uca kendi bünyesinde yönetmektedir. Takımın çok disiplinli mühendislik yetkinliği; farklı enerji konseptlerinde sıfırdan tasarladıkları *Icarus*, *Orion*, *Nova* ve *Castor* adlı yenilikçi araçlarla ulusal ve uluslararası arenada elde ettikleri çarpıcı şampiyonluklarla kanıtlanmıştır.\n\nÖzellikle dünyanın en prestijli mühendislik organizasyonlarından biri olan Shell Eco-Marathon Europe & Africa'da *Icarus* aracıyla 'Autonomous Urban Concept' kategorisinde Dünya Şampiyonu olan ve bu yarışmada şampiyonluğa ulaşan ilk Türk takımı unvanını kazanan YTÜ AESK, enerji verimliliği ile otonom teknolojilerde global standartlarda rekabet etmektedir. Buna ek olarak; TEKNOFEST Robotaksi Binek Otonom Araç Yarışması'nda *Orion* ile elde ettikleri şampiyonluk ve TÜBİTAK Efficiency Challenge'da hem elektromobil hem de hidromobil kategorilerindeki üstün dereceleri, ekibin alandaki dominasyonunu gözler önüne sermektedir. YTÜ AESK, geleceğin temiz enerji ve otonom ulaşım teknolojilerine yön verecek, analitik düşünen ve vizyoner mühendisler yetiştiren köklü bir inovasyon merkezidir.",
+  "bannerImage": "/images/uploads/1500x500.jpg",
+  "galleryPhotos": [
+    "/images/uploads/screenshot-2026-03-11-172847.png",
+    "/images/uploads/screenshot-2026-03-11-172553.png",
+    "/images/uploads/screenshot-2026-03-11-172652.png",
+    "/images/uploads/screenshot-2026-03-11-172449.png",
+    "/images/uploads/screenshot-2026-03-11-172540.png",
+    "/images/uploads/screenshot-2026-03-11-172737.png",
+    "/images/uploads/screenshot-2026-03-11-172758.png"
+  ],
+  "location": "Yıldız Teknik Üniversitesi Davutpaşa Kampüsü",
+  "category": "Otonom Araç"
+}
