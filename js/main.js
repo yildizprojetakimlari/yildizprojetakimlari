@@ -15,25 +15,41 @@ document.addEventListener('DOMContentLoaded', async () => {
     let teamsList = [];
     let categoriesList = new Set();
 
-    // Dinamik takım listesini çek (netlify build veya local node script ile oluşturulan)
+    // Dinamik takım listesini çek
     try {
         const listRes = await fetch('content/teamsList.json');
         if (listRes.ok) {
             const teamSlugs = await listRes.json();
-            for (const slug of teamSlugs) {
-                const res = await fetch(`content/teams/${slug}.json`);
-                if (res.ok) {
-                    const data = await res.json();
-                    data.id = slug; // append ID for routing
+
+            // Paralel indirme (Eski hali sırayla indirip yavaşlatıyordu)
+            const fetchPromises = teamSlugs.map(slug =>
+                fetch(`content/teams/${slug}.json`)
+                    .then(res => res.ok ? res.json() : null)
+                    .then(data => {
+                        if (data) data.id = slug;
+                        return data;
+                    })
+                    .catch(err => {
+                        console.error(`${slug} bilgileri alınamadı:`, err);
+                        return null;
+                    })
+            );
+
+            const results = await Promise.all(fetchPromises);
+
+            results.forEach(data => {
+                if (data) {
                     teamsList.push(data);
                     categoriesList.add(data.category);
                 }
-            }
+            });
         } else {
             console.warn("teamsList.json bulunamadı, takımlar yüklenemiyor.");
+            teamsGrid.innerHTML = '<div style="text-align: center; grid-column: 1 / -1; padding: 2rem;">Takım listesi alınamadı.</div>';
         }
     } catch (err) {
         console.error("Takımlar yüklenirken hata oluştu:", err);
+        teamsGrid.innerHTML = '<div style="text-align: center; grid-column: 1 / -1; padding: 2rem;">Veri çekilirken internet bağlantısı sorunu yaşandı. Lütfen sayfayı yenileyin.</div>';
     }
 
     // 1. Render Categories dynamically
